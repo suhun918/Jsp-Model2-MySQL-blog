@@ -18,6 +18,7 @@ CREATE TABLE user(
     username varchar(100) not null unique,
     password varchar(100) not null,
     email varchar(100) not null,
+    emailCheck int default 0,
     address varchar(100) not null,
     userProfile varchar(300) default '/blog/img/userProfile.png',
     createDate timestamp
